@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hw5</title>
+	<style type="text/css">
+
+			.btn {
+				border-style: solid;
+				border-width:0.5px; 
+				border-color: #666;
+				outline: none;
+				background-color: #f1f1f1;
+				cursor: pointer;
+				/*font-size: 12px;*/
+				width: 130px;
+				height: 40px;
+				border-radius: 2px;
+				font-family: "Georgia";
+			}
+			button{
+				color: black;
+				background-color: #EEEEEE;
+			}
+			button:hover{
+				background-color:#4CAF50;
+				color: white;
+			
+			}
+
+
+	/* Style the active class, and buttons on mouse-over */
+			.active{
+			  background-color: #666;
+			  border: solid;
+			  border-color: #666;
+				border-width:0.2px;
+			  color: white;
+			}
+			.btn:hover{
+			background-color:#4CAF50;
+			border: solid;
+			border-color: #666;
+			border-width:0.2px;
+			color:white
+			}
+
+
+			.content {
+						  position: absolute;bottom: 0;background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.5);color: #f1f1f1;
+						  width: 100%;
+						  padding: 0px;
+						  font-family: "Georgia";
+						}
+
+
+			.mySlides {display: none;}
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 500px;
+			  position: relative;
+			  margin: auto;
+			}
+
+			/* Caption text */
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			  .text {font-size: 11px}
+			}
+
+
+
+			#container{
+				width:1000px;
+				height:1500px;
+				text-align:center;
+				margin: auto;
+				font-family: "Georgia";
+			}
+			#top{
+				float: left;
+				text-align: center;
+				margin: auto;
+				width: 30%;
+				height: 100%;
+				font-family: "Georgia";
+
+			}
+			#searchbox{
+				
+				font-family: "Georgia";
+				float:right;
+				padding-left: 10%;
+				
+			}
+			#top5{
+				float: right;
+				width:70%;
+				font-family: "Georgia";
+			}
+			#carousel{
+				float:left;
+				width: 60%;
+				font-family: "Georgia";
+
+			}
+			#wordwrap{
+				float:right;
+				width: 38%;
+				padding-left: 2%;
+				font-family: "Georgia";
+			}
+			#cnnn{
+				width: 70%;
+				text-align: center;
+				float: right;
+				margin-top:-15px; 
+				font-family: "Georgia";
+			}
+			#cnn{
+				width: 70%;
+				text-align: center;
+				float: right;
+				font-family: "Georgia";
+			}
+			#foxx{
+				width: 70%;
+				text-align: center;
+				float: right;
+				font-family: "Georgia";
+			}
+			#fox{
+				width: 70%;
+				text-align: center;
+				float: right;
+				font-family: "Georgia";
+			}
+			#cnn1{
+				float:left;
+				padding: 0px 0px 0px 0px;
+				margin: 0.8%;
+				width:23%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+
+
+			}
+			#cnn2{
+				float:left;
+				padding: 0px;
+				width:23%;
+				margin: 0.8%;
+				border-style :solid;
+				border-width:0.5px 1px 1px 0.5px;
+				border-color: #999999;
+				height: 400px;
+			    border-radius: 5px;
+			    font-family: "Georgia";
+
+			}
+			#cnn3{
+				float:left;
+				padding: 0px;
+				margin: 0.8%;
+				width:23%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+
+			}
+			#cnn4{
+				float:left;
+				margin: 0.8%;
+				padding: 0px;
+				width:23%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+
+			}
+			#fox1{
+				float:left;
+				padding: 0px 0px 0px 0px;
+				margin: 0.8%;
+				width:23%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+			}
+			#fox2{
+				float:left;
+				padding: 0px;
+				width:23%;
+				margin: 0.8%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+			}
+			#fox3{
+				float:left;
+				padding: 0px;
+				margin: 0.8%;
+				width:23%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+			}
+			#fox4{
+				float:left;
+				margin: 0.8%;
+				padding: 0px;
+				width:23%;
+				border-style :solid;
+				border-color: #999999;
+				border-width:0.5px 1px 1px 0.5px;
+				height: 400px;
+				font-family: "Georgia";
+			    border-radius: 5px;
+			}
+
+
+			hr.new1 {
+  				border-top: 0.5px solid black;
+  				margin-top: -15px;
+			}
+
+
+
+			span{
+				display: inline-block;
+			}
+
+
+
+			#container1{
+				width:1000px;
+				height:1500px;
+				text-align:center;
+				margin: auto;
+				font-family: "Georgia";
+			}
+			#top1{
+				float: left;
+				text-align: center;
+				margin: auto;
+				width: 30%;
+				height: 100%;
+				font-family: "Georgia";
+
+			}
+			#searchbox1{
+				font-family: "Georgia";
+				float:right;
+				padding-left: 10%;
+				
+			}
+			#form1{
+				width: 70%;
+				max-height: 500px;
+				float: right;
+				background-color: #EFEFEF;
+				font-family: "Georgia";
+
+			}
+			#line1{
+				width:100%;
+				padding-top: 20px;
+				height: 20px;
+				font-family: "Georgia";
+			}
+			#line2{
+				width:100%;
+				padding-top: 20px;
+				height: 20px;
+				font-family: "Georgia";
+			}
+			#line3{
+				width:100%;
+				padding-top: 0px;
+				height: 20px;
+				font-family: "Georgia";
+			}
+			#aa{
+				width: 40%;
+				display: inline;
+				float: left;
+				font-family: "Georgia";
+				
+			}
+			#bb{
+				width: 30%;
+				display: inline;
+				float: left;
+				font-family: "Georgia";
+				
+			}
+			#cc{
+				width: 30%;
+				display: inline;
+				float: left;
+				font-family: "Georgia";
+				
+			}
+			#dd{
+				width: 35%;
+				display: inline;
+				float: left;
+				padding-left: 15%;
+				font-family: "Georgia";
+				
+			}
+			#ee{
+				width: 35%;
+				display: inline;
+				float: left;
+				padding-right: 15%;
+				font-family: "Georgia";
+			}
+			#ff{
+				width: 47%;
+				padding-right: 6%;
+				display: inline;
+				float: left;
+				text-align: right;
+				font-family: "Georgia";
+			}
+			#gg{
+				width: 47%;
+				display: inline;
+				float: left;
+				text-align:left;
+				font-family: "Georgia";
+					
+			}
+			#block{
+				width:70%;
+				float: right;
+				display:inline;
+				font-family: "Georgia";
+			}
+			#cards2{
+				width:70%;
+				float: right;
+				display:inline;
+				height: 200px;	
+				font-family: "Georgia";
+			}
+			.cards2{
+				width: 90%;
+				float: center;
+				display: inline;
+				font-family: "Georgia";
+
+			}
+			.cards2:hover{
+				box-shadow: 0 4px 6px 4px rgba(0,0,0,0.5);
+			    transition: 0.3s;
+			    border-radius: 5px;
+			    font-family: "Georgia";
+			   
+			}
+			.cards3{
+				width: 90%;
+				float: center;
+				display: inline;
+
+			}
+			.close {
+			  cursor: pointer;
+			  position: absolute;
+			  top: auto;
+			  right: 13%;
+			  padding: 0px 2px;
+			  transform: translate(0%, -50%);
+			  font-family: "Georgia";
+			}
+	</style>
+	<meta charset="utf-8">
+
+<!-- Load d3.js -->
+	<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load d3-cloud -->
+	<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+  
+</head>
+<body onload="viewJSON()">
+	<script type="text/javascript">
+		var jsonObj3;
+		var jsonObj1;
+		var jsonObj2;
+		function viewJSON()
+		{
+			/*var URL3="/pg1";
+			var URL1="/cnn";
+			var URL2="/fox";
+			function loadJSON(url)
+			{*/
+				
+
+
+				xhr=new XMLHttpRequest();
+				xhr.open("GET","/pg1",true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      jsonObj=JSON.parse(xhr.responseText);
+				      jsonObj3=jsonObj['top_headlines'];
+				      jsonObj1=jsonObj['cnn'];
+				      jsonObj2=jsonObj['fox'];
+				      displaytop(jsonObj3,jsonObj1,jsonObj2);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null); 
+
+
+
+
+				//xmlhttp.send();
+	  			//jsonObject= JSON.parse(xmlhttp.responseText);
+				//return jsonObject;
+			//}
+			/*jsonObj3=loadJSON(URL3);
+			console.log(jsonObj3);
+			//jsonObj.onload=generateHTML(jsonObj);
+			//document.write(html_text);
+			jsonObj1=loadJSON(URL1);
+			//jsonObj.onload=generateHTML1(jsonObj);
+			//document.write(html_text);
+			jsonObj2=loadJSON(URL2);
+			console.log(jsonObj3);
+			displaytop(jsonObj3,jsonObj1,jsonObj2);*/
+			//jsonObj.onload=generateHTML2(jsonObj);
+			//document.write(html_text);
+			//document.close();
+
+
+			
+
+		}
+		function displaytop(jsonObj3,jsonObj1,jsonObj2)
+		{
+			display1(jsonObj3,jsonObj1,jsonObj2);
+		}
+		function display2()
+		{
+			//console.log("Hey you");	
+			document.getElementById("container").style.display="none";
+			document.getElementById("container1").style.display="block";
+			document.getElementById("showmore").style.display="none";
+			document.getElementById("noresult").style.display="none";
+			getsources("all");
+			getdate();
+			
+
+		}
+		function display3()
+		{
+
+			document.getElementById("container1").style.display="none";
+			
+			document.getElementById("blocks").style.display="none";
+			document.getElementById("showmore").style.display="none";
+			document.getElementById("loadmore").style.display="none";
+			document.getElementById("showless").style.display="none";
+			document.getElementById("container").style.display="block";
+			document.getElementById("noresult").style.display="none";
+		}
+		function display1(jsonObj3,jsonObj1,jsonObj2)
+		{
+			document.getElementById("container1").style.display="none";
+			
+			root1=jsonObj3.articles;
+			//console.log(root1);
+			var root5=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(i=0;i<root1.length;i++)
+			{
+				if(root1[i]['author'] && root1[i]['description'] && root1[i]['title'] && root1[i]['url'] && root1[i]['urlToImage'] && root1[i]['publishedAt'] && root1[i]['source']['id'] && root1[i]['source']['name'])
+				{
+					root5[j]=root1[i];
+					j=j+1;
+				}
+			}
+			cards=root5[0];
+			//console.log(root5);
+			var cards1=Object.keys(cards);
+
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides(){
+			document.getElementById("1").innerHTML="<div><a href='"+root5[0]["url"]+"' target=_blank><img src='"+root5[0]["urlToImage"]+"' style='width:100%;height:250px;'><div class='content' style='width:100%;margin-bottom:4px;' ><h4 style='text-align:center;'>"+root5[0]["title"]+"</h4><p>"+root5[0]["description"]+"</p></div></a></div>";
+				document.getElementById("2").innerHTML="<div><a href='"+root5[1]["url"]+"' target=_blank><img src='"+root5[1]["urlToImage"]+"' style='height:250px;width:100%;'><div class='content' style='width:100%;margin-bottom:4px;'><h4 style='text-align:center;'>"+root5[1]["title"]+"</h4><p>"+root5[1]["description"]+"</p></div></a></div>";
+				document.getElementById("3").innerHTML="<div><a href='"+root5[2]["url"]+"' target=_blank><img src='"+root5[2]["urlToImage"]+"' style='height:250px;width:100%;'><div class='content' style='width:100%;margin-bottom:4px;'><h4 style='text-align:center;'>"+root5[2]["title"]+"</h4><p>"+root5[2]["description"]+"</p></div></a></div>";
+				document.getElementById("4").innerHTML="<div><a href='"+root5[3]["url"]+"' target=_blank><img src='"+root5[3]["urlToImage"]+"' style='height:250px;width:100%;'><div class='content' style='width:100%;margin-bottom:4px;'><h4 style='text-align:center;'>"+root5[3]["title"]+"</h4><p>"+root5[3]["description"]+"</p></div></a></div>";
+				document.getElementById("5").innerHTML="<div><a href='"+root5[4]["url"]+"' target=_blank><img src='"+root5[4]["urlToImage"]+"' style='height:250px;width:100%;'><div class='content' style='width:100%;margin-bottom:4px;'><h4 style='text-align:center;'>"+root5[4]["title"]+"</h4><p>"+root5[4]["description"]+"</p></div></a></div>";
+				
+				//document.getElementById("2").innerHTML="<div><img src='"+root[1]["urlToImage"]+"' style='width:475px; height:250px;'></div>";
+				//document.getElementById("3").innerHTML="<div><img src='"+root[2]["urlToImage"]+"' style='width:475px; height:250px;'></div>";
+
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		
+
+
+		
+		function getwordwrap()
+		{
+				xhr=new XMLHttpRequest();
+				xhr.open("GET","/stopwords",true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      stoppp=JSON.parse(xhr.responseText);
+				      wordwrap(stoppp);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null);
+		}
+		getwordwrap();
+
+
+
+
+		function wordwrap(stoppp)
+			{
+				
+
+
+			/*URL9="/stopwords";
+			console.log(URL9);
+			
+			function loadJSON(url)
+			{
+				
+
+
+				xmlhttp=new XMLHttpRequest();
+				xmlhttp.open("GET",url,false);
+				xmlhttp.send();
+	  			jsonObj9= JSON.parse(xmlhttp.responseText);
+				return jsonObj9;
+			}
+			stoppp=loadJSON(URL9);
+			console.log(stoppp);*/
+			//var countword={};
+				/*var my=[];
+				
+				root=jsonObj.articles;
+				for(i=0;i<root.length;i++)
+				{
+					title=root[i]["title"];
+					words=title.split(" ");
+					for(j=0;j<words.length;j++)
+					{
+						my.push(words[j]);
+					}
+					
+				}
+				for(i=0;i<my.length;i++)
+				{
+					cword=my[i];
+					if(countword.hasOwnProperty(cword))
+						countword[cword]++;
+					else
+						countword[cword]=1;
+				}
+				*/
+				var word_count=[];
+				for(var key in stoppp)
+				{
+					var temp={word:key,size:stoppp[key]};
+					word_count.push(temp);
+				}
+				//word_count.sort(function(a,b){return b.size-a.size;});
+
+
+				var myWords=word_count.slice(0,30);
+				//console.log(myWords);
+				var sss=30;
+				for(var a in myWords)
+				{
+					myWords[a].size=sss;
+					sss=sss-0.8;
+
+				}
+				//console.log(myWords);
+
+
+// set the dimensions and margins of the graph
+				var margin = {top: 0, right: 0, bottom: 0, left: 0},
+				    width = 250 - margin.left - margin.right,
+				    height = 250 - margin.top - margin.bottom;
+
+				// append the svg object to the body of the page
+
+				var svg = d3.select("#my_dataviz").append("svg")
+				    .attr("width", width + margin.left + margin.right)
+				    .attr("height", height + margin.top + margin.bottom)
+				  .append("g")
+				    .attr("transform",
+				          "translate(" + margin.left + "," + margin.top + ")");
+
+				// Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+				// Wordcloud features that are different from one word to the other must be here
+				var layout = d3.layout.cloud()
+				  .size([width, height])
+				  .words(myWords.map(function(d) { return {text: d.word, size:d.size}; }))
+				  .padding(5)        //space between words
+				  .rotate(function() { return ~~(Math.random() * 2) * 90; })
+				  .fontSize(function(d) { return d.size; })      // font size of words
+				  .on("end", draw);
+				layout.start();
+
+				// This function takes the output of 'layout' above and draw the words
+				// Wordcloud features that are THE SAME from one word to the other can be here
+				function draw(words) {
+				  svg
+				    .append("g")
+				      .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+				      .selectAll("text")
+				        .data(words)
+				      .enter().append("text")
+				        .style("font-size", function(d) { return d.size; })
+				        .style("fill", "#222222")
+				        .attr("text-anchor", "middle")
+				        .style("font-family", "Impact")
+				        .attr("transform", function(d) {
+				          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+				        })
+				        .text(function(d) { return d.text; });
+				}
+			}
+			var images=[];
+			var titles=[];
+			var desc=[];
+			var urls=[];
+			root1=jsonObj1.articles;
+			var root=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(i=0;i<root1.length;i++)
+			{
+				if(root1[i]['author'] && root1[i]['description'] && root1[i]['title'] && root1[i]['url'] && root1[i]['urlToImage'] && root1[i]['publishedAt'] && root1[i]['source']['id'] && root1[i]['source']['name'])
+				{
+					root[j]=root1[i];
+					j=j+1;
+				}
+			}
+
+			for(i=0;i<4;i++)
+			{
+				cards=root[i];
+				var cards1=Object.keys(cards);
+				images[i]=cards["urlToImage"];
+				titles[i]=cards["title"];
+				desc[i]=cards["description"];
+				urls[i]=cards["url"];
+			}
+			document.getElementById("cnn1").innerHTML="<a href='"+urls[0]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[0]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[0]+"</b></p><p style='font-size:13px;'>"+desc[0]+"</p></a>";
+			document.getElementById("cnn2").innerHTML="<a href='"+urls[1]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[1]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[1]+"</b></p><p style='font-size:13px;'>"+desc[1]+"</p></a>";
+			document.getElementById("cnn3").innerHTML="<a href='"+urls[2]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[2]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[2]+"</b></p><p style='font-size:13px;'>"+desc[2]+"</p></a>";
+			document.getElementById("cnn4").innerHTML="<a href='"+urls[3]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[3]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[3]+"</b></p><p style='font-size:13px;'>"+desc[3]+"</p></a>";
+			
+			
+			//console.log(max);
+			root1=jsonObj2.articles;
+			var root=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(i=0;i<root1.length;i++)
+			{
+				if(root1[i]['author'] && root1[i]['description'] && root1[i]['title'] && root1[i]['url'] && root1[i]['urlToImage'] && root1[i]['publishedAt'] && root1[i]['source']['id'] && root1[i]['source']['name'])
+				{
+					root[j]=root1[i];
+					j=j+1;
+				}
+			}
+			for(i=0;i<4;i++)
+			{
+				cards=root[i];
+				var cards1=Object.keys(cards);
+				images[i]=cards["urlToImage"];
+				titles[i]=cards["title"];
+				desc[i]=cards["description"];
+				urls[i]=cards["url"];
+			}
+			document.getElementById("fox1").innerHTML="<a href='"+urls[0]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[0]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[0]+"</b></p><p style='font-size:13px;'>"+desc[0]+"</p></a>";
+			document.getElementById("fox2").innerHTML="<a href='"+urls[1]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[1]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[1]+"</b></p><p style='font-size:13px;'>"+desc[1]+"</p></a>";
+			document.getElementById("fox3").innerHTML="<a href='"+urls[2]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[2]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[2]+"</b></p><p style='font-size:13px;'>"+desc[2]+"</p></a>";
+			document.getElementById("fox4").innerHTML="<a href='"+urls[3]+"' style = 'color:black;text-decoration:none;' target=_blank><img src='"+images[3]+"' style='width:100%;border-radius: 5px;'><p><b>"+titles[3]+"</b></p><p style='font-size:13px;'>"+desc[3]+"</p></a>";
+			adjustheight();
+
+		}
+		function adjustheight()
+		{
+			max="0";
+			theCSSprop=[];
+			var elem1=document.getElementById("cnn1");
+			theCSSprop[0] = window.getComputedStyle(elem1, null).getPropertyValue("height");
+			console.log(theCSSprop[0]);	
+			theCSSprop[0]=theCSSprop[0].substring(0,theCSSprop[0].indexOf("p"));
+			console.log(theCSSprop[0]);
+			var elem2=document.getElementById("cnn2");
+			theCSSprop[1] = window.getComputedStyle(elem2, null).getPropertyValue("height");	
+			theCSSprop[1]=theCSSprop[1].substring(0,theCSSprop[1].indexOf("p"));
+			var elem3=document.getElementById("cnn3");
+			theCSSprop[2] = window.getComputedStyle(elem3, null).getPropertyValue("height");	
+			theCSSprop[2]=theCSSprop[2].substring(0,theCSSprop[2].indexOf("p"));
+			var elem4=document.getElementById("cnn4");
+			theCSSprop[3] = window.getComputedStyle(elem4, null).getPropertyValue("height");
+			theCSSprop[3]=theCSSprop[3].substring(0,theCSSprop[3].indexOf("p"));	
+			for(i=0;i<3;i++)
+			{
+				if(theCSSprop[i]>theCSSprop[i+1])
+					max=theCSSprop[i];
+				else
+					max=theCSSprop[i+1];
+			}
+			console.log(max);
+		}
+		
+		function submit11(URL4)
+		{
+
+			xhr=new XMLHttpRequest();
+				xhr.open("GET",URL4,true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      abc=JSON.parse(xhr.responseText);
+				      console.log(abc);
+				      please(abc);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null);
+		}
+
+
+
+
+		function submit1()
+		{
+			document.getElementById("blocks").style.display="block";
+			//document.getElementById("showmore").style.display="block";
+			document.getElementById("noresult").style.display="none";
+			document.getElementById("loadmore").style.display="none";
+			document.getElementById("showless").style.display="none";
+			console.log("In submit");
+			var abc=document.forms['myform'].keyword.value;
+			URL4="/everything?";
+			a="keyword=";
+			a1=document.forms['myform'].keyword.value;
+			b="&from=";
+			b1=document.forms['myform'].from.value;
+			c="&to=";
+			c1=document.forms['myform'].to.value;
+			d="&category=";
+			d1=document.forms['myform'].categories.value;
+			e="&source=";
+			e1=document.forms['myform'].source.value;
+			URL4="/everything?"+a+a1+b+b1+c+c1+d+d1+e+e1;
+			console.log(URL4);
+			datt=new Date();
+			datt.setDate(datt.getDate()-30);
+			dat22=new Date(b1);
+			//var datess=new Date();
+/*			datess.setDate(datess.getDate()-7);
+			console.log("Looking for date");
+			document.getElementById('from').valueAsDate = datess;
+			document.getElementById('to').valueAsDate = new Date();*/
+
+
+			if(b1>c1)
+			{
+				console.log("Time Incorrect");
+				window.alert("Incorrect Time");
+				document.getElementById("showmore").style.display="none";
+				document.getElementById("blocks").style.display="none";
+				document.getElementById("loadmore").style.display="none";
+				document.getElementById("showless").style.display="none";
+			}
+			else if(dat22<datt)
+			{
+				console.log(dat22);
+				console.log(datt);
+				day1=dat22.getDate();
+				day2=datt.getDate();
+				month1=dat22.getMonth();
+				month1+=1;
+				month2=datt.getMonth();
+				month2+=1;
+				year1=dat22.getFullYear();
+				year2=datt.getFullYear();
+				firstdate=year1+"-"+month1+"-"+day1;
+				seconddate=year2+"-"+month2+"-"+day2;
+				window.alert("You are trying to request results too far in the past. Your plan permits you to request articles as far back as "+seconddate+", but you have requested "+firstdate+".To extend this please upgrade to paid plan.");
+				console.log("Time Long");
+				document.getElementById("showmore").style.display="none";
+				document.getElementById("blocks").style.display="none";
+				document.getElementById("loadmore").style.display="none";
+				document.getElementById("showless").style.display="none";
+
+			}
+			else
+			{
+			console.log("Time corretc");
+			submit11(URL4);
+
+		}
+	}
+	function please(jsonObj44)
+	{
+
+
+
+
+			root1=jsonObj44.articles;
+			var root=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(i=0;i<root1.length;i++)
+			{
+				if(root1[i]['author'] && root1[i]['description'] && root1[i]['title'] && root1[i]['url'] && root1[i]['urlToImage'] && root1[i]['publishedAt'] && root1[i]['source']['name'])
+				{
+					//console.log("In if");
+					root[j]=root1[i];
+					//console.log(root[j]);
+					//console.log(root1[i]);
+					j=j+1;
+				}
+
+			}
+			//console.log(root);
+
+
+
+
+
+
+			var images=[];
+			var desc=[];
+			var title=[];
+			var dates=[];
+			//console.log(jsonObj44.totalResults);
+			//console.log(jsonObj44);
+			if(jsonObj44.totalResults==0){
+				//console.log("In 0 ele");
+				document.getElementById("blocks").style.display="none";
+				document.getElementById("showmore").style.display="none";
+				document.getElementById("noresult").style.display="block";
+			}
+			else if(jsonObj44.totalResults<=5)
+			{
+				for(index22=0;index22<jsonObj44.totalResults;index22++)
+				{
+					cards=root[index22];
+					images[index22]=cards['urlToImage'];
+					title[index22]=cards['title'];
+					desc[index22]=cards['description'];
+					var shanya="";
+					var airtight=desc[index22].split(' ');
+					//console.log(airtight);
+					for(jj=0;jj<airtight.length;jj++)
+					{
+						shanya+="<span>"+airtight[jj]+"</span>"+" ";
+						//console.log(jj+" = "+shanya);
+
+					}
+					//console.log(shanya);
+					shanya=shanya.substring(0,shanya.length-1);
+					//console.log(shanya);
+
+
+					dates[index22]=cards['publishedAt'];
+					document.getElementsByClassName("cards2")[index22].innerHTML="<div style='border:solid;border-radius: 5px;border-color:#DDDDDD;border-width:0.5px;background-color:#EEEEEE;height:90px;'><div style='float:left;width:15%;text-align:left;'><img src='"+images[index22]+"' style='text-align:left;width:70px;height:70px;display:inline;padding-top:10px;margin-left:10px;'></div><div style='display:inline;float:right;width:85%;text-align:left;margin-top:10px'><p style='display:inline;text-align:left;'><b>"+title[index22]+"</b></p><br><p style='margin-top:5px;display:inline-block;font-size:12px; white-space: nowrap;overflow: hidden;display: block;text-overflow: ellipsis;text-align:left;'>"+shanya+"</p></div></div>";
+				}
+				for(j=index22;j<5;j++)
+				{
+					document.getElementsByClassName("cards2")[j].style.display="none";
+				}
+				document.getElementById("showmore").style.display="none";
+			}
+			else
+			{
+				for(index1=0;index1<5;index1++)
+				{
+					cards=root[index1];
+					images[index1]=cards['urlToImage'];
+					title[index1]=cards['title'];
+					desc[index1]=cards['description'];
+					var shanya="";
+					var airtight=desc[index1].split(' ');
+					//console.log(airtight);
+					for(jj=0;jj<airtight.length;jj++)
+					{
+						shanya+="<span>"+airtight[jj]+"</span>"+" ";
+						//console.log(jj+" = "+shanya);
+
+					}
+					//console.log(shanya);
+					shanya=shanya.substring(0,shanya.length-1);
+					//console.log(shanya);
+
+
+					dates[index1]=cards['publishedAt'];
+					document.getElementsByClassName("cards2")[index1].innerHTML="<div style='border:solid;border-radius: 5px;border-color:#DDDDDD;border-width:0.5px;background-color:#EEEEEE;height:90px;'><div style='float:left;width:15%;text-align:left;'><img src='"+images[index1]+"' style='text-align:left;width:70px;height:70px;display:inline;padding-top:10px;margin-left:10px;'></div><div style='display:inline;float:right;width:85%;text-align:left;margin-top:10px'><p style='display:inline;text-align:left;'><b>"+title[index1]+"</b></p><br><p style='margin-top:5px;display:inline-block;font-size:12px; white-space: nowrap;overflow: hidden;display: block;text-overflow: ellipsis;text-align:left;'>"+shanya+"</p></a></div></div>";
+					//console.log(dates[i]);
+					document.getElementsByClassName("cards2")[index1].style.display="block";
+					document.getElementById("showmore").style.display="block";
+					if(index1==4)
+					{
+						document.getElementById("showmore").style.display="block";
+					}
+
+
+				}
+		}
+	}
+		function showy(URL5)
+		{
+
+			xhr=new XMLHttpRequest();
+				xhr.open("GET",URL5,true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      abcd=JSON.parse(xhr.responseText);
+				      //console.log(abcd);
+				      showhell(abcd);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null);
+		}
+		
+		function show1()
+		{
+			
+			document.getElementById("showmore").style.display="none";
+			document.getElementById("loadmore").style.display="block";
+			document.getElementById("showless").style.display="block";
+			document.getElementById("noresult").style.display="none";
+			var abc=document.forms['myform'].keyword.value;
+			URL5="/everything?";
+			a="keyword=";
+			a1=document.forms['myform'].keyword.value;
+			b="&from=";
+			b1=document.forms['myform'].from.value;
+			c="&to=";
+			c1=document.forms['myform'].to.value;
+			d="&category=";
+			d1=document.forms['myform'].categories.value;
+			e="&source=";
+			e1=document.forms['myform'].source.value;
+			URL5="/everything?"+a+a1+b+b1+c+c1+d+d1+e+e1;
+			//console.log(URL5);
+			showy(URL5);
+			/*function loadJSON(url)
+			{
+				
+
+
+				xmlhttp=new XMLHttpRequest();
+				xmlhttp.open("GET",url,false);
+				xmlhttp.send();
+	  			jsonObj5= JSON.parse(xmlhttp.responseText);
+				return jsonObj5;
+			}
+			jsonObj5=loadJSON(URL5);
+			console.log(jsonObj5);*/
+		}
+		function showhell(jsonObj5)
+		{
+
+			root1=jsonObj5.articles;
+			var root=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(i=0;i<root1.length;i++)
+			{
+				if(root1[i]['author'] && root1[i]['description'] && root1[i]['title'] && root1[i]['url'] && root1[i]['urlToImage'] && root1[i]['publishedAt'] && root1[i]['source']['name'])
+				{
+					root[j]=root1[i];
+					j=j+1;
+				}
+			}
+
+			//root=jsonObj.articles;
+			var images=[];
+			var desc=[];
+			var title=[];
+			var dates=[];
+			for(i=5;i<15;i++)
+			{
+				cards=root[i];
+				images[i]=cards['urlToImage'];
+				title[i]=cards['title'];
+				desc[i]=cards['description'];
+				dates[i]=cards['publishedAt'];
+				var shanya="";
+					var airtight=desc[i].split(' ');
+					//console.log(airtight);
+					for(jj=0;jj<airtight.length;jj++)
+					{
+						shanya+="<span>"+airtight[jj]+"</span>"+" ";
+						//console.log(jj+" = "+shanya);
+
+					}
+					//console.log(shanya);
+					shanya=shanya.substring(0,shanya.length-1);
+					//console.log(shanya);
+				document.getElementsByClassName("cards2")[i].innerHTML="<div style='border:solid;border-radius: 5px;border-color:#DDDDDD;border-width:0.5px;background-color:#EEEEEE;height:90px;'><div style='float:left;width:15%;text-align:left;'><img src='"+images[i]+"' style='text-align:left;width:70px;height:70px;display:inline;padding-top:10px;margin-left:10px;'></div><div style='display:inline;float:right;width:85%;text-align:left;padding-top:10px'><p style='display:inline;text-align:left;'><b>"+title[i]+"</b></p><br><p style='margin-top:5px;display:inline;font-size:12px; white-space: nowrap;overflow: hidden;display: block;text-overflow: ellipsis;text-align:left;'>"+shanya+"</p></a></div></div>";
+				//console.log(dates[i]);
+
+
+			}
+
+		
+
+		}
+		function show()
+		{
+			//console.log("showing");
+		}
+		function showless()
+		{
+			document.getElementById("showmore").style.display="block";
+			document.getElementById("loadmore").style.display="none";
+			document.getElementById("showless").style.display="none";
+		}
+		function getsources1(URL6)
+		{
+			xhr=new XMLHttpRequest();
+				xhr.open("GET",URL6,true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      abcde=JSON.parse(xhr.responseText);
+				      //console.log(abcde);
+				      getsources11(abcde);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null);
+		}
+
+		function getsources(a)
+		{
+			//console.log(a);
+			URL6="/sources/?category="+a;
+			//console.log(URL3);
+			/*function loadJSON(url)
+			{
+				
+
+
+				xmlhttp=new XMLHttpRequest();
+				xmlhttp.open("GET",url,false);
+				xmlhttp.send();
+	  			jsonObj6= JSON.parse(xmlhttp.responseText);
+				return jsonObj6;
+			}*/
+			//jsonObj6=
+			getsources1(URL6);
+		}
+		function getsources11(jsonObj6)
+		{
+			console.log(jsonObj6);
+			root=jsonObj6.sources;
+			var opt=document.createElement("OPTION");
+			while(document.getElementById("source").hasChildNodes())
+				{
+					document.getElementById("source").removeChild(document.getElementById("source").firstChild);	
+				}	
+			
+			//console.log(root[0]);
+			//console.log(root.length);
+			var sourcess=[];
+			var values=[];
+			var opt=document.createElement("OPTION");
+			var att=document.createAttribute("value");
+			att.value="all";
+			opt.innerHTML="all";
+			opt.setAttributeNode(att);
+			document.getElementById("source").appendChild(opt);
+				
+			for(i=0;i<root.length;i++)
+			{	cards=root[i];
+				sourcess[i]=cards["name"];
+				values[i]=cards["id"];
+				var opt=document.createElement("OPTION");
+				var att=document.createAttribute("value");
+				att.value=values[i];
+				opt.innerHTML=sourcess[i];
+				opt.setAttributeNode(att);
+				document.getElementById("source").appendChild(opt);
+				
+			}
+			//console.log("Outside loop");
+
+		}
+		function cont1(URL7,i)
+		{
+			xhr=new XMLHttpRequest();
+				xhr.open("GET",URL7,true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      tryi=JSON.parse(xhr.responseText);
+				      //console.log(tryi);
+				      cont11(tryi,i);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null);
+		}
+
+		function cont(i)
+		{
+			//document.getElementById("showmore").style.display="none";
+			var abc=document.forms['myform'].keyword.value;
+			URL7="/everything?";
+			a="keyword=";
+			a1=document.forms['myform'].keyword.value;
+			b="&from=";
+			b1=document.forms['myform'].from.value;
+			c="&to=";
+			c1=document.forms['myform'].to.value;
+			d="&category=";
+			d1=document.forms['myform'].categories.value;
+			e="&source=";
+			e1=document.forms['myform'].source.value;
+			URL7="/everything?"+a+a1+b+b1+c+c1+d+d1+e+e1;
+			//console.log(URL7);
+			/*function loadJSON(url)
+			{
+								
+
+
+				xmlhttp=new XMLHttpRequest();
+				xmlhttp.open("GET",url,false);
+				xmlhttp.send();
+	  			jsonObj7= JSON.parse(xmlhttp.responseText);
+				return jsonObj7;
+			}
+			jsonObj7=loadJSON(URL4);
+			console.log(jsonObj7);*/
+			cont1(URL7,i);
+		}
+			function cont11(jsonObj7,i){
+
+			root1=jsonObj7.articles;
+			var root=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(index=0;index<root1.length;index++)
+			{
+				if(root1[index]['author'] && root1[index]['description'] && root1[index]['title'] && root1[index]['url'] && root1[index]['urlToImage'] && root1[index]['publishedAt'] && root1[index]['source']['name'])
+				{
+					root[j]=root1[index];
+					j=j+1;
+				}
+			}
+
+
+
+			//root=jsonObj.articles;
+			
+				cards=root[i];
+				images=cards['urlToImage'];
+				title=cards['title'];
+				desc=cards['description'];
+				dates=cards['publishedAt'];
+				author=cards['author'];
+				source=cards['source']['name'];
+				urls=cards['url'];
+				dates=dates.substring(0,dates.indexOf('T'));
+				i1=dates.indexOf('-');
+				i2=dates.indexOf('-',5);
+
+				date1=dates.substring(0,i1);
+				date2=dates.substring(i1+1,i2);
+				date3=dates.substring(i2+1,dates.length);
+				datte=date2+"/"+date3+"/"+date1;
+
+				//document.getElementsByClassName("cards2")[i].style.display="none";
+				document.getElementsByClassName("cards2")[i].innerHTML="<div style='border:solid;border-color:#CCCCCC;background-color:#DDDDDD;width:100%;height:200px;'><div style='float:left;width:15%;text-align:left;'><img src='"+images+"' style='text-align:left;width:70px;height:70px;display:inline;padding-top:10px;margin-left:10px;'></div><div style='float:right;width:85%;text-align:left;padding-top:10px'><p style='display:inline;' onclick='opens("+i+")'><span class='close'>&times;</span></p><p style='display:inline;text-align:left;'><b>"+title+"</b></p><br><p style='margin-top:5px;display:inline;font-size:12px;'><b>Author:  &nbsp;</b>  "+author+"</p><br><p style='margin-top:5px;display:inline;font-size:12px;'><b>Source: &nbsp;</b>"+source+"</p><br><p style='margin-top:5px;display:inline;font-size:12px;'><b>Date: &nbsp;</b>"+datte+"</p><br><p style='margin-top:5px;display:inline;font-size:12px;'>"+desc+"</p><br><a href='"+urls+"' target=_blank><p style='margin-top:5px;display:inline;font-size:12px;'>See Original Post</p></a></div></div>";
+				//console.log();
+				
+				//console.log(dates[i]);
+
+		}
+		function opens1(URL8,ind)
+		{
+			xhr=new XMLHttpRequest();
+				xhr.open("GET",URL8,true);
+
+				xhr.onload = function (e) {
+				  if (xhr.readyState === 4) {
+				    if (xhr.status === 200) {
+				      tryiii=JSON.parse(xhr.responseText);
+				      //console.log(tryiii);
+				      opens11(tryiii,ind);
+				    } else {
+				      console.error(xhr.statusText);
+				    }
+				  }
+				};
+				xhr.onerror = function (e) {
+				  console.error(xhr.statusText);
+				};
+				xhr.send(null);
+		}
+		function opens(ind)
+		{
+
+			document.getElementsByClassName("cards2")[ind].removeAttribute("onclick");
+			var formele=document.forms['myform'].keyword.value;
+			URL8="/everything?";
+			a="keyword=";
+			a1=document.forms['myform'].keyword.value;
+			b="&from=";
+			b1=document.forms['myform'].from.value;
+			c="&to=";
+			c1=document.forms['myform'].to.value;
+			d="&category=";
+			d1=document.forms['myform'].categories.value;
+			e="&source=";
+			e1=document.forms['myform'].source.value;
+			URL8="/everything?"+a+a1+b+b1+c+c1+d+d1+e+e1;
+			//console.log(URL8);
+			opens1(URL8,ind);
+
+		}
+		function opens11(jsonObj8,ind)
+		{
+			//console.log("Hello Boys Great");
+			//console.log(ind);
+			//console.log(jsonObj8);
+			root1=jsonObj8.articles;
+			
+			var root=[];
+			var j=0;
+			//author, description, title, url, urlToImage, publishedAt and source with its inner keys
+			for(index=0;index<root1.length;index++)
+			{
+				if(root1[index]['author'] && root1[index]['description'] && root1[index]['title'] && root1[index]['url'] && root1[index]['urlToImage'] && root1[index]['publishedAt'] && root1[index]['source']['name'])
+				{
+					root[j]=root1[index];
+					j=j+1;
+				}
+			}
+
+
+
+			//root=jsonObj.articles;
+				//console.log(root[ind]);
+				cardss=root[ind];
+				imagess=cardss['urlToImage'];
+				titles=cardss['title'];
+				descs=cardss['description'];
+				datess=cardss['publishedAt'];
+				authors=cardss['author'];
+				sources=cardss['source']['name'];
+				urlss=cardss['url'];
+				var shanya="";
+					var airtight=descs.split(' ');
+					//console.log(airtight);
+					for(jj=0;jj<airtight.length;jj++)
+					{
+						shanya+="<span>"+airtight[jj]+"</span>"+" ";
+						//console.log(jj+" = "+shanya);
+
+					}
+					//console.log(shanya);
+					shanya=shanya.substring(0,shanya.length-1);
+					//console.log(shanya);
+				//console.log(document.getElementsByClassName("cards2")[ind]);
+				//document.getElementsByClassName("cards2")[ind].removeAttribute("onclick");
+				//console.log(document.getElementsByClassName("cards2")[ind]);
+				//document.getElementsByClassName("cards2")[i].style.display="none";
+				//document.getElementsByClassName("cards2")[ind].innerHTML="<div><p>Hellloooo</p></div>";
+				document.getElementsByClassName("cards2")[ind].innerHTML="<div style='border:solid;border-radius: 5px;border-color:#DDDDDD;border-width:0.5px;background-color:#EEEEEE;height:90px;' onclick='cont("+ind+")'><div style='float:left;width:15%;text-align:left;'><img src='"+imagess+"' style='text-align:left;width:70px;height:70px;display:inline;padding-top:10px;margin-left:10px;'></div><div style='display:inline;float:right;width:85%;text-align:left;padding-top:10px'><p style='display:inline;text-align:left;'><b>"+titles+"</b></p><br><p style='margin-top:5px;display:inline;font-size:12px; white-space: nowrap;overflow: hidden;display: block;text-overflow: ellipsis;text-align:left;'>"+shanya+"</p></div></div>";
+				//console.log("Open clsoed");
+		}
+		function getdate()
+		{
+			var datess=new Date();
+			datess.setDate(datess.getDate()-7);
+			console.log("Looking for date");
+			document.getElementById('from').valueAsDate = datess;
+			document.getElementById('to').valueAsDate = new Date();
+
+		}
+		function clearvalues()
+		{
+			document. getElementById("myform").reset();
+			document.getElementById("blocks").style.display="none";
+			document.getElementById("loadmore").style.display="none";
+			document.getElementById("showless").style.display="none";
+			document.getElementById("showmore").style.display="none";
+			getdate();
+		}
+	</script>
+
+	<div id="container">
+		<div id="top">
+			<div id="searchbox" style="position: fixed;">
+				<button class="btn active"><b>Google News</b></button>
+				<br>
+				<button class="btn" onclick="display2()" style="margin-top: -3px;"><b>Search</b></button>
+			</div>
+		</div>
+		<div id="top5">
+			<div id="carousel">
+				<div class="slideshow-container">
+
+				<div id="1" class="mySlides fade">
+				  <div class="text">Caption Text</div>
+				</div>
+
+				<div id="2" class="mySlides fade">
+				  <div class="text">Caption Two</div>
+				</div>
+
+				<div id="3" class="mySlides fade">
+				  <div class="text">Caption Three</div>
+				</div>
+
+				<div id="4" class="mySlides fade">
+				  <div class="text">Caption Three</div>
+				</div>
+
+				<div id="5" class="mySlides fade">
+				  <div class="text">Caption Three</div>
+				</div>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" style="display: none"></span> 
+				  <span class="dot" style="display: none"></span> 
+				  <span class="dot" style="display: none"></span>
+				  <span class="dot" style="display: none"></span>
+				  <span class="dot" style="display: none"></span> 
+				</div>
+			</div>
+			<div id="wordwrap">
+				<div id="my_dataviz" style="background-color: #EEEEEE ">
+					
+				</div>
+			</div>
+		</div>
+		<div id="cnnn">
+			<H1>CNN</H1>
+			<hr class="new1">
+			
+		</div>
+		<div id="cnn">
+
+			<div id="cnn1" class="cnn" style="background-color: #EEEEEE;">
+				
+			</div>
+			<div id="cnn2" class="cnn" style="background-color: #EEEEEE;">
+				
+			</div>
+			<div id="cnn3" class="cnn" style="background-color: #EEEEEE; ">
+				
+			</div>
+			<div id="cnn4" class="cnn" style="background-color: #EEEEEE; ">
+				
+			</div>
+		</div>
+		<div id="foxx">
+			<H1>Fox News</H1>
+			<hr class="new1">
+			
+		</div>
+		<div id="fox">
+			<div id="fox1" class="cnn" style="background-color: #EEEEEE ">
+				
+			</div>
+			<div id="fox2" class="cnn" style="background-color: #EEEEEE ">
+				
+			</div>
+			<div id="fox3" class="cnn" style="background-color: #EEEEEE ">
+				
+			</div>
+			<div id="fox4" class="cnn" style="background-color: #EEEEEE ">
+				
+			</div>
+		</div>
+	</div>
+	<div id="container1">
+			<div id="top1">
+				<div id="searchbox1" style="position: fixed">
+					<button class="btn" onclick="display3()"><b>Google News</b></button>
+					<br>
+					<button class="btn active" style="margin-top: -3px;"><b>Search</b></button>
+				</div>
+			</div>
+			<div id="form1" style="border-radius: 5px;font-size: 12px">
+				<form name="myform" id="myform" onsubmit="return false">
+					<div id="line1">
+						<div id="aa">
+					<label for="keyword">Keyword<span style="color:red;">*</span> </label>
+	  				<input type="text" id="keyword" name="keyword" required><br><br>
+	  					</div>
+	  					<div id="bb">
+
+
+
+
+			  				<label for="from">From<span style="color:red;">*</span> </label>
+			  				<input type="date" id="from" name="from" required><br><br>
+	  					</div>
+	  					<div id="cc">
+	  				<label for="to">To<span style="color:red;">*</span> </label>
+	  				<input type="date" id="to" name="to" required><br><br>
+	  					</div>
+	  				</div>
+	  				<div id="line2">
+	  					<div id="dd">
+	  				<label for="categories">Category: </label>
+	  				<select id="categories" name="categories" onchange="getsources(this.value)" style="width: 150px; text-align-last:center;">
+	  					
+	  					<option value="all" selected>all</option>
+					    <option value="business">Business</option>
+					    <option value="entertainment">Entertainment</option>
+					    <option value="general">General</option>
+					    <option value="health">Health</option>
+					    <option value="science">Science</option>
+					    <option value="sports">Sports</option>
+					    <option value="technology">Technology</option>
+					</select>
+	  					</div>
+	  					<div id="ee">
+  					<label for="source">Source: </label>
+	  				<select id="source" name="source" style="width: 150px;text-align-last:center;">
+	  					<option value="all" selected>All</option>
+					    
+					    
+	  				</select>
+	  					</div>
+  					</div>
+  					<br>
+  					<div id="line3">
+  						<div id="ff">
+  							<button type='submit' value='Search' onclick="submit1()" style="border-style: none;" >Search</button>
+  						</div>
+  						<div id="gg">
+  							<button type='button' value='Clear' onclick="clearvalues()" style="border-style: none;">Clear</button>
+  						</div>
+  						
+  					</div>
+  					<br>
+  				</form>
+  
+			</div > <!--form1--> 
+
+
+			<div id="blocks" style="width: 70%;float: right;">
+				<div class="cards2" style="width: 90%;height: auto;display: block; margin-left: auto; margin-right: auto;margin-top: 15px;" onclick="cont(0)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(1)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(2)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(3)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(4)">
+			
+
+				</div>
+			</div>
+			<div id="showmore" style="width: 70%;float: right;">
+				<button type='submit' value='Searching' onclick="show1()" style="margin-top: 5px;border-style: none;">Show More</button>
+			</div>
+			<div id="loadmore" style="width: 70%;float: right;">
+
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(5)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(6)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(7)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(8)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(9)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(10)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(11)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(12)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(13)">
+			
+
+				</div>
+				<div class="cards2" style="width: 90%;display: block; margin-left: auto; margin-right: auto;margin-top: 5px;" onclick="cont(14)">
+			
+
+				</div>
+			</div>
+			<div id="showless" style="width: 70%;float: right; display: none;">
+				<button type='submit' value='Search' onclick="showless()" style="margin-top: 5px;border-style: none;">Show Less</button>
+				<br>
+				<br>
+			</div>
+			<div id="noresult" style="width: 70%;float: right;display: none;">
+				<p style="font-family: 'Georgia';font-size: 13px; ">No results</p>
+			</div>
+
+
+	</div><!--container1-->
+</body>
+</html>
+
