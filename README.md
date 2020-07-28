@@ -29,4 +29,4 @@ SET FLASK_APP=myapp
 
 flask run
 
-Step 5: Open browser and go to http://127.0.0.1:5000/
+Step 5: Open browser and go to http://127.0.0.1:3000/
