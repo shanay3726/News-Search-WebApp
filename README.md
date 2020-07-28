@@ -6,9 +6,9 @@ A simple website to view the most up-to-date news and also search it based on th
 - *Javascript, HTML, CSS Frontend*
   
 ## Screenshots
-![Home Page] (https://i.imgur.com/o4WC6je.png)
-![Search] (https://i.imgur.com/S6Te0Ti.png)
-![Saerch Result] (https://i.imgur.com/1qTcR2e.png)
+![Home Page](https://i.imgur.com/o4WC6je.png)
+![Search](https://i.imgur.com/S6Te0Ti.png)
+![Saerch Result](https://i.imgur.com/1qTcR2e.png)
 
 ## Steps to execute
 Step 1: Download the repository or clone it
